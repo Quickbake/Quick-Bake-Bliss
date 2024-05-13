@@ -1,1 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Bake Bliss</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            margin: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        #tips-container, #recipe1, #recipe2, #recipe3, #recipe4, #recipe5, #recipe6, #recipe7, #recipe8, #recipe9, #recipe10, #recipe11, #recipe12   {
+            display: none;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+      #recipe1, #recipe2, #recipe3, #recipe4, #recipe5, #recipe6, #recipe7, #recipe8, #recipe9, #recipe10, #recipe11, #recipe12 {
+          display: none; /* Set initial display to 'none' */
+      }
+
+      #tips-container {
+          display: none; /* Set initial display to 'none' */
+      }
+      .hidden {
+          display: none;
+      }
+      #recipe1.print-only {
+          display: block;
+          background-color: #fff;
+          padding: 10px;
+          border-radius: 5px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      #recipe2.print-only {
+          display: block;
+          background-color: #fff;
+          padding: 10px;
+          border-radius: 5px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      #recipe3.print-only {
+          display: block;
+          background-color: #fff;
+          padding: 10px;
+          border-radius: 5px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      #recipe4.print-only {
+          display: block;
+          background-color: #fff;
+          padding: 10px;
+          border-radius: 5px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      #recipe5.print-only {
+          display: block;
+          background-color: #fff;
+          padding: 10px;
+          border-radius: 5px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Quick Bake Bliss</h1>
+    </header>
+  </section>
+  <section>
+      <h2>Welcome to Quick Bake Bliss!</h2>
+      <p>Explore our delicious baking recipes and get useful tips for perfect results.</p>
+
+    <p>Hello, This is a list of easy recipes That I have collected and used over a few years, if you have any questions about the recipe, or if you have a recipe that you would like for me to include please email me at quickbakebliss@gmail.com. Please include the recipe name. Thanks!</p>
+
+  <section>
+        <button onclick="recipe1()"> Basic no-bake cheesecake</button>
+        <div id="recipe1"> 
+          <button onclick="printRecipe1()">Print Recipe</button>
+            <h2>Basic no-bake cheesecake</h2>
+            <h3>Ingredients:</h3>
+              <ul>
+                <h3>For Crust:</h3>
+                  <ul>
+                <li>1 1/2 cup fine graham cracker crumbs</li>
+                <li>1/2 cup sugar</li>
+                <li>1/4 cup butter, melted</li></ul>
+                <h3>For Filling:</h3>
+                  <ul>
+                    <li>4 8oz bricks cream cheese</li>
+                    <li>2 cups sugar</li>
+                    <li> 4 tsb vanilla extract</li>
+                    <li>4 cups cool whip</li>
+              </ul></ul>
+            <h3>Instructions:</h3>
+                <ul>
+                  <li>Prepare 10 in springform pan by cutting a circle of parchment paper to match the bottom of the pan. Spray the bottom of the pan and place the circle on the bottom. Spray the Parchment paper.</li>
+                  <h3>For Crust:</h3>
+                  <ul>
+                    <li>Mix the graham cracker crumbs and the sugar in medium. bowl</li>
+                    <li>Add the melted butter and mix until combined.</li>
+                    <li>Press the crumb mixture into the bottom of the pan.</li></ul>
+                  <h3>For Filling:</h3>
+                  <ul>
+                    <li>Using a stand mixer, beat cream cheese until smooth and creamy.</li>
+                    <li>Add the sugar and vanilla extract and beat until combined.</li>
+                    <li>Fold in the cool whip with spatula until combined.</li></ul>
+                  <h3>Preperaation Instructions:</h3>
+                  <ul>
+                  <li>Pour the filling into the crust and spread evenly.</li> 
+                  <li>Put panned cheesecake into fridge and allow to set at least 12 hours.</li>
+                  <li>Carefully depan the cheesecake and keep refrigerated until ready to serve.</li>
+                </ul></ul>
+        </div>
+    </section>
+  <section>
+    <button onclick="recipe2()"> Joe's "Say Cheese" Cheescake</button>
+    <div id="recipe2"> 
+      <button onclick="printRecipe2()">Print Recipe</button>
+      <h2>Joe's "Say Cheese" Cheescake</h2>
+      <h2>CREDIT TO TRISHA YEARWOOD</h2>
+      <h3>Ingredients:</h3>
+      <ul><h3>For Crust:</h3>
+        <ul>
+      <li>1 1/2 cup fine graham cracker crumbs</li>
+      <li>1/2 cup sugar</li>
+      <li>1/4 cup butter, melted</li></ul>
+      <h3>For Filling:</h3>
+      <ul><li>4 8oz bricks cream cheese</li>
+      <li>2 cups sour cream</li>
+      <li>4 large eggs</li>
+      <li>1 1/4 cups sugar</li>
+      <li>2 1/2 TBSP cornstarch</li>
+      <li>2 tsb vanilla extract</li></ul>
+      <h3>For Strawberry Sauce:</h3>
+      <ul><li>1 to 1 1/4 cups halved, fresh strawberries</li>
+        <li>1/4 cup sugar</li>
+        <li>1 lime, zested</li></ul></ul>
+      <h3>Instructions:</h3>
+    <ul><li>For the crust: Preheat the oven to 375 degrees F. Spray the bottom of a 10-inch springform pan with cooking spray; line the bottom with a round of parchment paper; and spray the paper with cooking spray. Place the pan on a sheet of heavy-duty aluminum foil and bring the foil up around the sides to enclose the seam between the bottom and the sides of the pan.*</li>
+    <li>Stir together the graham cracker crumbs and sugar in a mixing bowl. Add the melted butter and mix until the crumbs are coated. Press the mixture firmly into the bottom of the pan and up the sides. Set aside.</li>
+    <li>For the filling: In a stand mixer, beat the cream cheese together with the sour cream. Add the eggs, one at a time, beating well after each addition. Add the sugar, cornstarch and vanilla, and beat until smooth.</li>
+      <li>Pour the filling into the prepared crust. Set the foil-wrapped pan inside a larger pan, and carefully pour 1/2 inch of warm water into the larger pan to create a water bath. Bake for 1 hour. Turn off the oven, open the oven door and let the cheesecake stand in the opened oven for 1 hour. Refrigerate the cheesecake for 2 hours or overnight before removing it from the pan.*</li>
+      <li>or the sauce: Process the strawberries, sugar and lime zest in a food processor or blender until smooth. Chill for at least 1 hour before serving. (The sauce is best served cold from the refrigerator.)</li>
+    </ul>
+    <h3>Tips:</h3>
+      <ul><li>*Put a piece of tinfoil around the bottom of the springform pan and put another piece all the way around, at least halfway up the pan, including the bottom to prevent leaks into the crust.</li>
+        <li>*I find that for the best results, leave the cheesecake in the pan overnight.</li> </ul>
+    </div>
+  </section>
+  <section>
+    <button onclick="recipe3()"> Cream Cheese Buttercream</button>
+    <div id="recipe3"> 
+      <button onclick="printRecipe3()">Print Recipe</button>
+      <h2>Cream Cheese Buttercream</h2>
+      <h3>Ingredients:</h3>
+      <ul>
+        <li>8oz cream cheese, softened</li>
+        <li>1/2 cup butter, softened</li>
+        <li>1 pound(approximately 4 cups) powerdered sugar</li>
+        <li>1 tsb vanilla extract</li>
+      </ul>
+      <h3>Instructions:</h3>
+      <ul>
+        <li>In stand mixer, beat together cream cheese, butter, and vanilla extract untill smooth.</li>
+        <li>Add powdered sugar a little at a time until fully incorperated.</li>
+        <li>Beat on high until stiff peaks form or reaches desired consistency. Approximately 2-3 minutes.</li></ul>
+    </div>
+  </section>
+  <section>
+    <button onclick="recipe4()"> Easy Chocolate Variety Truffles</button>
+    <div id="recipe4"> 
+      <button onclick="printRecipe4()">Print Recipe</button>
+      <h2>Easy Chocolate Variety Truffles</h2>
+       <h2>CREDIT TO Raleigh Wallace</h2>
+      <h3>Ingredients:</h3>
+      <ul> <li>12 oz any kind of flavored chocolate bar.* </li>
+        <li>12 oz (approximate) regular chocolate (milk, white, or dark, but with no extra flavoring)</li>
+        <li> 4-6 oz heavy whipping cream, depending on how soft you want your truffle to be.*</li>
+      </ul>
+      <h3>Instructions:</h3>
+      <ul>
+        <li>Break the 12 oz of flavored chocolate into pieces and lay it out in a pan that’s at least a few inches deep.</li>
+       <li>Heat the heavy whipping cream on medium/medium-high heat, stirring continuously, until it just starts to bubble. Make sure it does not burn. OR heat in the microwave, stirring every 10-15 seconds, until it is warm enough to melt the chocolate.</li> 
+        <li>Pour the heavy whipping cream over the flavored chocolate and wait for a few minutes so the chocolate can melt. Then stir the mixture until it is smooth.</li>
+        <li>Put the mixture into the fridge or freezer until it is solid enough to form into balls.</li>
+        <li>Melt the plain chocolate. Roll the truffles into balls and dip them in the plain chocolate, then put the balls back into the fridge.
+*</li>
+        <li>Wait for the plain chocolate to solidify.</li>
+      </ul>
+      <h3>Notes:</h3>
+        <ul>
+          <li>*I have tried this with dark chocolate caramel Ghirardelli bars, white chocolate caramel Ghirardelli bars, and Endangered Species Forest Mint bars, and they have all turned out well.</li>
+          <li>*Make sure you have at least twice as much flavored chocolate as heavy whipping cream!
+</li>
+          <li>*If you have made very thick truffles (with very little whipping cream), you can skip coating them in plain chocolate, if you prefer.</li>
+        </ul>
+      
+    </div>
+  </section>
+  <section>  
+    <button onclick="recipe5()"> No Sugar Added Apple Pie</button>
+      <div id="recipe5"> 
+        <button onclick="printRecipe5()">Print Recipe</button>
+        <h2> No Sugar Added Apple Pie</h2>
+            <h3>Ingredients:</h3>
+          <ul>
+              <li>3 Tablespoons cornstarch</li>
+              <li> 1 Tablespoon ground cinnomon</li>
+              <li>12 oz unsweetened apple juice concentrate</li>
+              <li> 6 cups thinly sliced peeled apples</li>
+              <li> 1 recipe for a 9 inch double crust pie</li>
+          </ul>
+          <h3>Instructions:</h3>
+          <ul> 
+              <li>preheat oven to 350F</li>
+              <li> whisk together cornstarch, cinnamon, and 1/4 of the apple juice</li>
+              <li> In a saucepanover medium heat, simmecr the apples in remaining apple juice until tender.</li>
+              <li> Add the cornstarch mixture to the apples and stir until thickened</li>
+              <li> Pour the mixture into the double crust pie and bake for 45 minutes</li>
+      </div>
+    </section>
+ <section>  
+     <button onclick="recipe6()"> Carolina Coffee Cake</button>
+      <div id="recipe6"> 
+      <button onclick="printRecipe6()">Print Recipe</button>
+       <h2>Carolina Coffee Cake</h2>
+          <h3>Ingredients:</h3>
+          <ul>
+              <li>1/2 cups shortening</li>
+              <li>2 1/4 cups sifted Self rising flour</li>
+              <li>1 cup sugar</li>
+              <li>1/2 cup chopped nuts</li>
+              <li>2 eggs</li>
+              <li>1 cup Milk</li>
+              <h3>FOR CRUMBLE TOPPING</h3>
+              <li>1/2 cup brown sugar</li>
+              <li> 2 tablespoons butter</li>
+              <li>1 teaspoon cinnamon</li>
+              <li>2 tablespoons flour</li>         
+          </ul>
+          <h3>Instructions:</h3>
+          <ul>
+            <li>Heat oven to 375 F</li>
+              <li>grease and lightly flour a 10 inch cake pan</li>
+              <li>Cream shortening and sugar until fluffy</li>
+              <li>Add eggs</li>
+              <li>Add flour and milk alternatly making 3 additions of each</li>
+              <li> fold in Nuts</li>
+              <li>Pour into pan </li>
+              <li> Combine all ingriedints for Crumble topping then put on top of cake</li>
+              <li>Bake for 35 minutes</li>
+          </ul>
+        </div>
+</section>
+       <section>  
+           <button onclick="recipe7()"> Simple Buttercream</button>
+            <div id="recipe7"> 
+            <button onclick="printRecipe7()">Print Recipe</button>
+             <h2>Simple Buttercream</h2>
+            <h3>Ingredients:</h3>
+                <ul>
+                    <li> 1 cup unsalted butter, softened</li>
+                    <li> 4 cups confectioners sugar, sifted</li>
+                    <li> 3 teaspoons vanila extract</li>
+                    <li> 4 tablespoons milk</li>
+                </ul>
+                <h3>Instructions:</h3>
+                <ul>
+                    <li> Cream butter in stand mixer</li>
+                    <li> Gradually beat in confectioners sugar</li>
+                    <li> Beat in vanilla extract</li>
+                    <li> Add milk and beat 5 minutes</li>
+                </ul>
+            </div>
+      </section>
+       <section>  
+           <button onclick="recipe8()"> White Cake</button>
+            <div id="recipe8"> 
+            <button onclick="printRecipe8()">Print Recipe</button>
+             <h2>White Cake</h2>
+                <h3>Indredients:</h3>
+                <ul>
+                    <li>2 cups white suagr</li>
+                    <li>1 cup unsalted butter</li>
+                    <li>4 eggs</li>
+                    <li>1 Tablespoon vanilla extract</li>
+                    <li>3 Cups All purpose flour</li>
+                    <li>1 tablespoon baking powder</li>
+                    <li>1 cup milk</li>
+                </ul>
+                <h3>Instructions:</h3>
+                <ul>
+                    <li>Preheat Oven to 350F and grease and flour 2 9-inch square pans</li>
+                    <li>Cream sugar and butter together in mixing bowl</li>
+                    <li>Add in eggs, one at a time, beating briefly after each addition</li>
+                    <li>Stir in vanilla</li>
+                    <li>In a seperate bowl, mix together flour and baking powder</li>
+                    <li>Mix in wet ingredients</li>
+                    <li>Add milk and stir until completly smooth</li>
+                    <li>Pour batter into prepared pans</li>
+                    <li>Bake for 30-40 minutes</li>
+                </ul>
+              </div>
+      </section>
+       <section>  
+           <button onclick="recipe9()"> Cream Cheese Cookies</button>
+            <div id="recipe9"> 
+            <button onclick="printRecipe9()">Print Recipe</button>
+             <h2>Cream Cheese cookies</h2>
+                <h3>Ingredients:</h3>
+                <ul>
+                    <li>1 cup unsalted butter</li>
+                    <li>8 ounces cream cheese</li>
+                    <li>2 cups sugar</li>
+                    <li>2 eggs at room temperature</li>
+                    <li>4 teaspoons vanilla extract</li>
+                    <li>3 1/2 cups all purpose flour</li>
+                    <li>1 Teaspoon baking powder</li>
+                    <li>1 teaspoon salt</li>
+                </ul>
+                <h3>Instructions:</h3>
+                <ul>
+                    <li>Whisk together flour salt and baking powder, set aside</li>
+                    <li>Using a stand mixer with paddle attachement, cream butter and cream cheese add the suagr and beat until light and fluffy</li>
+                    <li>Add egg and Vanilla and mix until combined</li>
+                    <li>Add the dryingresients and mix on low untill just combined</li>
+                    <li>Cover bowl and set in fridge for at least one hour*</li>
+                    <li>Heat oven to 375F</li>
+                    <li>Portion dough into 2 tablespoon sized balls* and place them on prepared baking sheet about 2-3 inches apart</li>
+                    <li>Bake for 10 minutes</li>
+
+                </ul>
+                <h3>Notes:</h3>
+                <ul>
+                    <li>*I find 2 hours work best</li>
+                    <li>*They will be sticky, spray hands or scooper to make them stick less, wash when neccecary</li>
+                </ul>
+              </div>
+      </section>
+       <section>  
+           <button onclick="recipe10()"> Chocolate Fudge</button>
+            <div id="recipe10"> 
+            <button onclick="printRecipe10()">Print Recipe</button>
+             <h2>Chocolate Fudge</h2>
+                <h3>Ingredients:</h3>
+                <ul>
+                    <li>3 cups milk chocolate chips</li>
+                    <li>1 (14 ounce) can sweetened condensed milk</li>
+                    <li>1/4 cup unsalted butter, cut into pieces</li>
+                    <li>1 cup chopped nuts(optional)</li>
+                </ul>
+                <h3>Instructions:</h3>
+                <ul>
+                    <li>Combine all ingredients except for nuts in large microwave safe bowl</li>
+                    <li>Put in microwave for 4 minutes, stiring once</li>
+                    <li>Generously grease 8-inch square glass baking dish</li>
+                    <li>Stir in nuts</li>
+                    <li>Pour into prepared dish</li>
+                    <li>Put in the fridge for at least 2 hours</li>
+                </ul>
+              </div>
+      </section>
+       <section>  
+           <button onclick="recipe11()"> Oreo Truffles</button>
+            <div id="recipe11"> 
+            <button onclick="printRecipe11()">Print Recipe</button>
+             <h2>Oreo Truffles</h2>
+                <h2>CREDIT TO RALEIGH WALLACE</h2>
+                <h3>Ingredients:</h3>
+                <ul>
+                    <li>Doubele stuffed oreos</li>
+                    <li>Ghirardelli white chocolate baking bars or chips</li>
+                    <li>Sweetened Condensed milk</li>
+                </ul>
+                <h3>Instructions:</h3>
+                <ul>
+                    <li> Seperate athe oreos, keep some whole</li>
+                    <li>Scrape icing into skillet</li>
+                    <li>Break choclate into chunks if not using chips and add some to the skillet</li>
+                    <li>Add some sweetwnded condenced milk to the skillet, have morw chocolate and icing than the sweetented condenced milk.</li>
+                    <li>Put skillet over low heat and stir contuosly until all ingredients are combined, it will be a fudge like mixture</li>
+                    <li>Refriderate the fudge</li>
+                    <li>Melt the rest of the chocloate</li>
+                    <li>Set the oreo cookies face down on a plate. Take some of the fudge and roll into a ball. Dip the ball into the melted chocolate, then put it on top of a cookie</li>
+                    <li>Let cool</li>
+                </ul>
+              </div>
+      </section>
+       <section>  
+           <button onclick="recipe12()"> PlaceHolder</button>
+            <div id="recipe12"> 
+            <button onclick="printRecipe12()">Print Recipe</button>
+             <h2>PLACE</h2>
+              </div>
+     
+  <script>
+      function recipe1() {
+          var recipe1 = document.getElementById("recipe1");
+          recipe1.style.display = (recipe1.style.display !== 'block') ? 'block' : 'none';
+      }
+  </script>
+  <script>
+      function recipe2() {
+          var recipe2 = document.getElementById("recipe2");
+          recipe2.style.display = (recipe2.style.display !== 'block') ? 'block' : 'none';
+      }
+  </script>
+  <script>
+      function recipe3() {
+          var recipe3 = document.getElementById("recipe3");
+            recipe3.style.display = (recipe3.style.display !== 'block') ? 'block' : 'none';
+      }
+  </script>
+  <script>
+      function recipe4() {
+          var recipe4 = document.getElementById("recipe4");
+            recipe4.style.display = (recipe4.style.display !== 'block') ? 'block' : 'none';
+      }
+  </script>
+  <script>
+      function recipe5() {
+          var recipe5 = document.getElementById("recipe5");
+            recipe5.style.display = (recipe5.style.display !== 'block') ? 'block' : 'none';
+      }
+  </script>
+      <script>
+            function recipe6() {
+                var recipe6 = document.getElementById("recipe6");
+                  recipe6.style.display = (recipe6.style.display !== 'block') ? 'block' : 'none';
+            }
+        </script>
+      <script>
+            function recipe7() {
+                var recipe7 = document.getElementById("recipe7");
+                  recipe7.style.display = (recipe7.style.display !== 'block') ? 'block' : 'none';
+            }
+        </script>
+      <script>
+            function recipe8() {
+                var recipe8 = document.getElementById("recipe8");
+                  recipe8.style.display = (recipe8.style.display !== 'block') ? 'block' : 'none';
+            }
+        </script>
+      <script>
+            function recipe9() {
+                var recipe9 = document.getElementById("recipe9");
+                  recipe9.style.display = (recipe9.style.display !== 'block') ? 'block' : 'none';
+            }
+        </script>
+      <script>
+            function recipe10() {
+                var recipe10 = document.getElementById("recipe10");
+                  recipe10.style.display = (recipe10.style.display !== 'block') ? 'block' : 'none';
+            }
+        </script>
+      <script>
+            function recipe11() {
+                var recipe11 = document.getElementById("recipe11");
+                  recipe11.style.display = (recipe11.style.display !== 'block') ? 'block' : 'none';
+            }
+        </script>
+      <script>
+            function recipe12() {
+                var recipe12 = document.getElementById("recipe12");
+                  recipe12.style.display = (recipe12.style.display !== 'block') ? 'block' : 'none';
+            }
+        </script>
+    <section>
+        <h2>Baking Tips</h2>
+        <button onclick="showTips()">Show Tips</button>
+        <div id="tips-container">
+            <li>Use room temperature ingredients for better mixing.</li>
+            <li>If requrired in recipe, preheat your oven before starting the baking process.</li>
+            <li> Measure ingredients accurately for the best results.</li>
+        </div>
+    </section>
+
+    <section>
+      <h3>DISCLAIMERS:</h3>
+      <p>I am not a chef, I am just a person who loves to cook and bake.</p>
+      <p>Some of these recipes are not original, the person who origianly wrote them, if I know who, will have credit with the recipe.</p>
+      <p>This is a hand coded webpage, if you notice any errors feel free to email me at the email listed above. Please include what the error is and where it is located. Thanks!</p>
+    </section>
+
+  <script>
+      function showTips() {
+          var tipsContainer = document.getElementById("tips-container");
+            tipsContainer.style.display = (tipsContainer.style.display !== 'block') ? 'block' : 'none';
+      }
+  </script>
+    <script>
+        function printRecipe1() {
+            var printContent = document.getElementById("recipe1");
+            var originalBodyContent = document.body.innerHTML;
+
+            document.body.innerHTML = printContent.outerHTML;
+            window.print();
+
+            document.body.innerHTML = originalBodyContent;
+        }
+    </script>
+    <script>
+        function printRecipe2() {
+            var printContent = document.getElementById("recipe2");
+            var originalBodyContent = document.body.innerHTML;
+
+            document.body.innerHTML = printContent.outerHTML;
+            window.print();
+
+            document.body.innerHTML = originalBodyContent;
+        }
+    </script>
+    <script>
+        function printRecipe3() {
+            var printContent = document.getElementById("recipe3");
+            var originalBodyContent = document.body.innerHTML;
+
+            document.body.innerHTML = printContent.outerHTML;
+            window.print();
+
+            document.body.innerHTML = originalBodyContent;
+        }
+    </script>
+    <script>
+        function printRecipe4() {
+            var printContent = document.getElementById("recipe4");
+            var originalBodyContent = document.body.innerHTML;
+
+            document.body.innerHTML = printContent.outerHTML;
+            window.print();
+
+            document.body.innerHTML = originalBodyContent;
+        }
+    </script>
+  <script>
+      function printRecipe5() {
+          var printContent = document.getElementById("recipe5");
+          var originalBodyContent = document.body.innerHTML;
+
+          document.body.innerHTML = printContent.outerHTML;
+          window.print();
+
+          document.body.innerHTML = originalBodyContent;
+      }
+  </script>
+      <script>
+            function printRecipe6() {
+                var printContent = document.getElementById("recipe6");
+                var originalBodyContent = document.body.innerHTML;
+
+                document.body.innerHTML = printContent.outerHTML;
+                window.print();
+
+                document.body.innerHTML = originalBodyContent;
+            }
+        </script>
+      <script>
+            function printRecipe7() {
+                var printContent = document.getElementById("recipe7");
+                var originalBodyContent = document.body.innerHTML;
+
+                document.body.innerHTML = printContent.outerHTML;
+                window.print();
+
+                document.body.innerHTML = originalBodyContent;
+            }
+        </script>
+      <script>
+            function printRecipe7() {
+                var printContent = document.getElementById("recipe7");
+                var originalBodyContent = document.body.innerHTML;
+
+                document.body.innerHTML = printContent.outerHTML;
+                window.print();
+
+                document.body.innerHTML = originalBodyContent;
+            }
+        </script>
+      <script>
+            function printRecipe8() {
+                var printContent = document.getElementById("recipe8");
+                var originalBodyContent = document.body.innerHTML;
+
+                document.body.innerHTML = printContent.outerHTML;
+                window.print();
+
+                document.body.innerHTML = originalBodyContent;
+            }
+        </script>
+      <script>
+            function printRecipe9() {
+                var printContent = document.getElementById("recipe9");
+                var originalBodyContent = document.body.innerHTML;
+
+                document.body.innerHTML = printContent.outerHTML;
+                window.print();
+
+                document.body.innerHTML = originalBodyContent;
+            }
+        </script>
+      <script>
+            function printRecipe10() {
+                var printContent = document.getElementById("recipe10");
+                var originalBodyContent = document.body.innerHTML;
+
+                document.body.innerHTML = printContent.outerHTML;
+                window.print();
+
+                document.body.innerHTML = originalBodyContent;
+            }
+        </script>
+      <script>
+            function printRecipe11() {
+                var printContent = document.getElementById("recipe11");
+                var originalBodyContent = document.body.innerHTML;
+
+                document.body.innerHTML = printContent.outerHTML;
+                window.print();
+
+                document.body.innerHTML = originalBodyContent;
+            }
+        </script>
+       <script>
+                  function printRecipe12() {
+                      var printContent = document.getElementById("recipe12");
+                      var originalBodyContent = document.body.innerHTML;
+
+                      document.body.innerHTML = printContent.outerHTML;
+                      window.print();
+
+                      document.body.innerHTML = originalBodyContent;
+                  }
+              </script>
+     
+<button onclick="scrollToTop()">Scroll to Top</button>
+<script>
+function scrollToTop() {
+  window.scrollTo(0, 0);
+}
+</script>
+</body>
+</html>
