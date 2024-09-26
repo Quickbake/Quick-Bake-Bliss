@@ -89,6 +89,25 @@
           border-radius: 5px;
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       }
+        @media print {
+            .recipe {
+                page-break-after: always; 
+            }
+        }
+        .print-button {
+            font-weight: bold;           
+            background-color: #4CAF50; 
+            color: white;               
+            border: none;               
+            padding: 10px 20px;         
+            border-radius: 5px;        
+            cursor: pointer;             
+            transition: background-color 0.3s; 
+        }
+
+        .print-button:hover {
+            background-color: #45a049;  
+        }
     </style>
 </head>
 <body>
@@ -102,8 +121,8 @@
       <p>Explore our delicious baking recipes and get useful tips for perfect results.</p>
 
     <p>Hello, This is a list of easy recipes That I have collected and used over a few years, if you have any questions about one of the recipes, or if you have a recipe that you would like for me to include please email me at quickbakebliss@gmail.com. Please include the recipe name. Thanks!</p>
-
-        <div id="recipe1"> 
+ <button onclick="printall()">Print All Recipes</button>
+        <div class="recipe" id="recipe1"> 
           <button onclick="printRecipe1()">Print Recipe</button>
             <h2>Basic no-bake cheesecake</h2>
             <h3>Ingredients:</h3>
@@ -143,7 +162,7 @@
     </section>
   <section>
     <button onclick="recipe2()"> Joe's "Say Cheese" Cheescake</button>
-    <div id="recipe2"> 
+    <div class="recipe id="recipe2"> 
       <button onclick="printRecipe2()">Print Recipe</button>
       <h2>Joe's "Say Cheese" Cheescake</h2>
       <h2>CREDIT TO TRISHA YEARWOOD</h2>
@@ -178,7 +197,7 @@
   </section>
   <section>
     <button onclick="recipe3()"> Cream Cheese Buttercream</button>
-    <div id="recipe3"> 
+    <div class="recipe" id="recipe3"> 
       <button onclick="printRecipe3()">Print Recipe</button>
       <h2>Cream Cheese Buttercream</h2>
       <h3>Ingredients:</h3>
@@ -197,7 +216,7 @@
   </section>
   <section>
     <button onclick="recipe4()"> Easy Chocolate Variety Truffles</button>
-    <div id="recipe4"> 
+    <div class="recipe" id="recipe4"> 
       <button onclick="printRecipe4()">Print Recipe</button>
       <h2>Easy Chocolate Variety Truffles</h2>
        <h2>CREDIT TO Raleigh Wallace</h2>
@@ -228,7 +247,7 @@
   </section>
   <section>  
     <button onclick="recipe5()"> No Sugar Added Apple Pie</button>
-      <div id="recipe5"> 
+      <div class="recipe" id="recipe5"> 
         <button onclick="printRecipe5()">Print Recipe</button>
         <h2> No Sugar Added Apple Pie</h2>
             <h3>Ingredients:</h3>
@@ -250,7 +269,7 @@
     </section>
  <section>  
      <button onclick="recipe6()"> Carolina Coffee Cake</button>
-      <div id="recipe6"> 
+      <div class="recipe" id="recipe6"> 
       <button onclick="printRecipe6()">Print Recipe</button>
        <h2>Carolina Coffee Cake</h2>
           <h3>Ingredients:</h3>
@@ -283,7 +302,7 @@
 </section>
        <section>  
            <button onclick="recipe7()"> Simple Buttercream</button>
-            <div id="recipe7"> 
+            <div class"recipe" id="recipe7"> 
             <button onclick="printRecipe7()">Print Recipe</button>
              <h2>Simple Buttercream</h2>
             <h3>Ingredients:</h3>
@@ -304,7 +323,7 @@
       </section>
        <section>  
            <button onclick="recipe8()"> White Cake</button>
-            <div id="recipe8"> 
+            <div class="recipe" id="recipe8"> 
             <button onclick="printRecipe8()">Print Recipe</button>
              <h2>White Cake</h2>
                 <h3>Indredients:</h3>
@@ -333,7 +352,7 @@
       </section>
        <section>  
            <button onclick="recipe9()"> Cream Cheese Cookies</button>
-            <div id="recipe9"> 
+            <div class="recipe" id="recipe9"> 
             <button onclick="printRecipe9()">Print Recipe</button>
              <h2>Cream Cheese cookies</h2>
                 <h3>Ingredients:</h3>
@@ -368,7 +387,7 @@
       </section>
        <section>  
            <button onclick="recipe10()"> Chocolate Fudge</button>
-            <div id="recipe10"> 
+            <div class="recipe" id="recipe10"> 
             <button onclick="printRecipe10()">Print Recipe</button>
              <h2>Chocolate Fudge</h2>
                 <h3>Ingredients:</h3>
@@ -391,7 +410,7 @@
       </section>
        <section>  
            <button onclick="recipe11()"> Oreo Truffles</button>
-            <div id="recipe11"> 
+            <div class="recipe" id="recipe11"> 
             <button onclick="printRecipe11()">Print Recipe</button>
              <h2>Oreo Truffles</h2>
                 <h2>CREDIT TO RALEIGH WALLACE</h2>
@@ -417,7 +436,7 @@
       </section>
        <section>  
            <button onclick="recipe12()"> Crockpot Lemon-Blueberry Dessert</button>
-            <div id="recipe12"> 
+            <div class="recipe" id="recipe12"> 
             <button onclick="printRecipe12()">Print Recipe</button>
              <h2>Crockpot Lemon-Blueberry Dessert</h2>
                 <h3>Ingredients:</h3>
@@ -675,12 +694,42 @@
                       document.body.innerHTML = originalBodyContent;
                   }
               </script>
-     
+      <script>
+               function printall() {
+                   var recipes = document.querySelectorAll('.recipe'); 
+                   var printContent = '';
+
+                   recipes.forEach(function(recipe) {
+                       printContent += recipe.outerHTML; 
+                   });
+                   recipes.forEach(function(recipe) {
+                       recipe.style.display = 'block'; 
+                       printContent += recipe.outerHTML; 
+                   });
+
+                   var originalBodyContent = document.body.innerHTML;
+                   document.body.innerHTML = printContent; 
+                   window.print(); 
+
+                   document.body.innerHTML = originalBodyContent; 
+                   
+               }
+                    
+           </script>
 <button onclick="scrollToTop()">Scroll to Top</button>
 <script>
 function scrollToTop() {
   window.scrollTo(0, 0);
 }
+    <button onclick="closeAllRecipes()">Close All Recipes</button>
+           <script>
+           function closeAllRecipes() {
+               var recipes = document.querySelectorAll('.recipe'); 
+               recipes.forEach(function(recipe) {
+                   recipe.style.display = 'none'; 
+               });
+           }
+               </script>
 </script>
 </body>
 </html>
