@@ -67,7 +67,9 @@ button {
        page-break-after: always;
    }
 }
-
+ .recipe:last-child {
+        page-break-after: auto; /* Prevents the page break after the last recipe */
+    }
 .print-button {
    font-weight: bold;
    background-color: #4CAF50;
