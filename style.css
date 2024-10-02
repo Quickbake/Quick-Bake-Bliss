@@ -1,1 +1,84 @@
+body {
+   font-family: 'Arial', sans-serif;
+   margin: 0;
+   padding: 0;
+   background-color: #f8f8f8;
+}
 
+header {
+   background-color: #333;
+   color: #fff;
+   text-align: center;
+   padding: 1em;
+}
+
+section {
+   margin: 20px;
+}
+
+h2 {
+   color: #333;
+}
+
+#tips-container,
+.recipe {
+   display: none;
+   background-color: #fff;
+   padding: 10px;
+   border-radius: 5px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+   padding: 10px;
+   background-color: #333;
+   color: #fff;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.recipe {
+   display: none;
+}
+
+#tips-container {
+   display: none;
+}
+
+.hidden {
+   display: none;
+}
+
+#recipe1.print-only,
+#recipe2.print-only,
+#recipe3.print-only,
+#recipe4.print-only,
+#recipe5.print-only {
+   display: block;
+   background-color: #fff;
+   padding: 10px;
+   border-radius: 5px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media print {
+   .recipe {
+       page-break-after: always;
+   }
+}
+
+.print-button {
+   font-weight: bold;
+   background-color: #4CAF50;
+   color: white;
+   border: none;
+   padding: 10px 20px;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s;
+}
+
+.print-button:hover {
+   background-color: #45a049;
+}
