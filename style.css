@@ -64,11 +64,11 @@ button {
 
 @media print {
     .recipe {
-        page-break-after: always; /* Forces a new page after each recipe */
+        page-break-after: always; 
     }
 
     .recipe:last-child {
-        page-break-after: auto; /* Prevents the page break after the last recipe */
+        page-break-after: avoid; 
     }
 
     button, .non-printable {
