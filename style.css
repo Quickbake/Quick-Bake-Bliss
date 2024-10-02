@@ -63,13 +63,27 @@ button {
 }
 
 @media print {
-   .recipe {
-       page-break-after: always;
-   }
-}
- .recipe:last-child {
+    /* Ensure each recipe starts on a new page */
+    .recipe {
+        page-break-after: always; /* Forces a new page after each recipe */
+    }
+
+    /* Remove the extra page by preventing breaks after the last recipe */
+    .recipe:last-child {
         page-break-after: auto; /* Prevents the page break after the last recipe */
     }
+
+    /* Optionally, you can hide elements that are not needed when printing */
+    button, .non-printable {
+        display: none;
+    }
+
+    /* Remove any extra margins or padding that might push content onto a new page */
+    body, html {
+        margin: 0;
+        padding: 0;
+    }
+}
 .print-button {
    font-weight: bold;
    background-color: #4CAF50;
