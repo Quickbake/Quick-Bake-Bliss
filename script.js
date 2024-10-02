@@ -201,4 +201,9 @@ function closeAllRecipes() {
 function scrollToTop() {
   window.scrollTo(0, 0);
 }
-
+ <script>
+               function closeAllRecipes() {
+               var recipes = document.querySelectorAll('.recipe'); 
+               recipes.forEach(function(recipe) {
+                   recipe.style.display = 'none'; 
+           });
